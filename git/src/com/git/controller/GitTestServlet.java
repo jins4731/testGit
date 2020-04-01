@@ -27,7 +27,9 @@ public class GitTestServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("호호호 수정한 내용");
+		System.out.println("호호호호");
+		String name=request.getParameter("name");
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
